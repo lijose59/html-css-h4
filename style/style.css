@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --letras:#B88940;
+    --lineas: #FFBD59;
+    --catamaran: 'Catamaran', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --ruda: 'Ruda', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    width: 60%;
+    
+}
+header::before{
+    content: "";
+    background: black;
+    width: 6%;
+    height: 4px;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}
+
+
+header h3{
+    position: absolute;
+    top: 5vh;
+    font-family: var(--ruda);
+    text-transform: uppercase;
+    font-size:1rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-weight: 900 ;
+    
+}
+header h1{
+    position: absolute;
+    top: 6vh;
+    font-family: var(--ruda);
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--letras);
+    letter-spacing: 10px;
+    font-weight: 900 ;
+}
+header h2{
+    position: absolute;
+    top: 20vh;
+    font-size: 2rem;
+    font-family: var(--ruda);
+    text-transform: uppercase;
+    font-weight: 900 ;
+}
+ header p {
+    position: absolute;
+    top: 29vh;
+    font-family: var(--catamaran);
+    font-weight: 900 ;
+    font-size: 1.2rem;
+    word-spacing: 2px ;
+    letter-spacing: 3px;
+
+ }
+.dos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 4em;
+ } 
+.lines{
+    display: flex;
+    flex-direction: column;
+    gap: 1em; 
+    width: 100%;
+    margin: 2em;
+    z-index: -1;
+}
+
+.lines > *{
+    height: 4vh;
+    width: 100%;
+    background: var(--lineas);
+}
+
+.photos  {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.dos .photos div >*{
+    width: 100%;
+    height: 35vh;
+    
+}
+.photos div{
+    display: flex;
+    flex-direction: column;
+}
+.photos div span{
+    text-align: center;
+    font-family: var(--catamaran);
+    font-weight: bold ;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    align-items: center;
+}
+footer{
+    position: absolute;
+    top: 85vh;
+}
+footer h2{
+    
+    color: var(--letras);
+    font-family: var(--open-sans);
+    text-transform: uppercase;
+    font-weight: bold ;
+    font-size: 2rem;
+}
+footer p{
+    font-family: var(--catamaran);
+    font-size: 1;
+    font-weight: bold;
+}
